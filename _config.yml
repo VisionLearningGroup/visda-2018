@@ -1,7 +1,7 @@
 
 title: TASK-CV ICCV Workshop Challenge
 url: 'http://ai.bu.edu'
-baseurl: '/taskcv-2017-challenge' #change it according to your repository name
+baseurl: '/visda-2017' #change it according to your repository name
 
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.

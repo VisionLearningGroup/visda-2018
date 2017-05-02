@@ -3,16 +3,87 @@ layout: default
 ---
 
             
-<section class="section summary-section">
-	<h1> TASK-CV Challenge </h1>
-<h2 class="section-title">
-	<!-- <i class="fa fa-user"></i> -->
-Task Description</h2>
+<section style="text-align: justify">
+	<h1> Visual Domain Adaptation Challenge </h1>
+</br></br>
+<h2 class="section-title"> Overview </h2>
 <div class="summary">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+<p> We are pleased to announce the 2017 Visual Domain Adaptation (VisDA) Challenge! It is well known that the success of machine learning methods on visual recognition tasks is highly dependent on access to large labeled datasets. Unfortunately, performance often drops significantly when the model is presented with data from a new deployment domain which it did not see in training, a problem known as <i> dataset shift </i>. The VisDA challenge aims to test domain adaptation methods’ ability to transfer source knowledge and adapt it to novel target domains. </p>
+
+</br>
+
+<figure>
+<img class="img-responsive" src="{{site.baseurl}}/assets/images/bad-example.png"/>
+</figure>
+<p><strong>Caption:</strong> An output of a semantic image segmentation model tested on an image from a different domain. Unsupervised Domain Adaptation methods aim to use large volumes of unlabeled samples from target domain to reduce an error on the test domain. [1]</p>
+
+</br>
+<h2 class="section-title"> Timeline </h2>
+
+<p> The competition will take place during the months of June -- September 2017<!-- (see <a href="#dates"> dates </a>) -->, and the top performing teams will be invited to present their results at the TASK-CV workshop at <a href="http://iccv2017.thecvf.com/">ICCV 2017 in Venice, Italy</a>. This year’s challenge focuses on  synthetic-to-real visual domain shifts and includes two tracks: </p>
+
+  <ul>
+    <li>image classification</li>
+    <li>image segmentation</li>
+  </ul>
+
+<p> Participants are welcome to enter in one or both tracks. </p>
+</br>
+
+<h2 class="section-title"> Classification Track </h2>
+<p> In this challenge, the goal is to develop a method of unsupervised domain adaptation for image classification. Participants will be given three datasets, each containing the same object categories: </p> 
+  <ul>
+    <li> <b> training data (source)</b>: synthetic 2D renderings of 3D models generated from different angles and with different lighting conditions, </li>
+    <li> <b> validation data (target)</b>: a photo-realistic or real-image validation domain that participants can use to evaluate performance of their domain adaptation methods, and </li>
+    <li> <b> test data (target)</b>: a new real-image test domain, <b> different from the validation domain and without labels </b>. The test set will be released shortly before the end of the competition. </li>
+  </ul>
+<p> The reason for using different target domains for validation and test is to evaluate the performance of proposed models as an out-of-the-box domain adaptation tool. This setting more closely mimics realistic deployment scenarios where the target domain is unknown at training time, and discourages algorithms that are designed to handle to a particular target domain. </p>
+
+<figure>
+<img class="img-responsive" src="{{site.baseurl}}/assets/images/classification-shift.png"/>
+</figure>
+
+</br>
+
+<h2 class="section-title"> Segmentation Track </h2>
+
+<p> In this challenge, the goal is to develop an algorithm that can adapt between synthetic dashcam views and real dashcam footage for the semantic image segmentation task. The training data will include pixel-level semantic annotations for 13 classes. We will also provide validation and testing data, same way as described above. </p>
+
+<figure>
+<img class="img-responsive" src="{{site.baseurl}}/assets/images/semantic-shift.png"/>
+</figure>
+
+</br> </br>
+
+<h2 class="section-title"> Dates and Registration </h2>
+<p> 
+	Please, use the registration form on the side now in order to receive invitation link after the official start of a challenge.
+<ul>
+<li>Registration Starts: May 1st</li>
+<li>Challenge Starts: June 19th</li>
+<li>Final submission: September 29th</li>
+<li>Winners notification: October 13th</li>
+</ul>
+</p>
+
+</br>
+
+<h2 class="section-title"> Organizers </h2>
+
+Kate Saenko (Boston University), 
+Ben Usman (Boston University),
+Xingchao Peng (Boston University),
+Neela Kaushik (Boston University),
+Judy Hoffman (Stanford University),
+Dequan Wang (UC Berkeley)
+
+
+ 
+
+
 </div><!--//summary-->
 </section><!--//section-->
-            
+
 <div style="height:700px; width:100%; clear:both;"></div>
 
 
