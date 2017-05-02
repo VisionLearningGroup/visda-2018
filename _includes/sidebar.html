@@ -7,7 +7,7 @@
                 <h1 class="name">{{site.name}}</h1>
                 <h3 class="tagline">{{site.tagline}}</h3>
             </div><!--//profile-container-->
-            <div class="education-container container-block" style="background: rgba(0, 0, 50, 0.3);">
+            <div class="education-container container-block" style="background: rgba(0, 0, 50, 0.3);" id='reg'>
                 
                 <h2 class="container-block-title">Registration</h2>
                 <form method="POST" action="http://formspree.io/visda-2017@googlegroups.com">
@@ -22,7 +22,15 @@
                   <div class="form-group">
                     <label>Affilation</label>
                     <input type="text" class="form-control" name="aff" placeholder="Affilation" />
-                  </div>  
+                  </div>
+                  <div class="form-group">
+                    <label>Tentative Track</label>
+                    <select class="form-control" name="track">
+                      <option>Both</option>
+                      <option>Classification</option>
+                      <option>Segmentation</option>
+                    </select>
+                  </div>
                   <input type="hidden" name="_format" value="plain" />
                   <input type="text" name="_gotcha" style="display:none" />
                   <button type="submit" class="btn btn-default">Submit</button>
@@ -34,7 +42,7 @@
             <h2 class="container-block-title">Important Dates</h2>
 
             <div class="item">
-                <h4 class="degree"><a href='#'>Registration</a> Starts</h4>
+                <h4 class="degree">Registration Starts</h4>
                 <h5 class="meta">May 1st</h5>
             </div><!--//item-->
             <div class="item">
