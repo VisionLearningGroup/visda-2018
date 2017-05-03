@@ -47,8 +47,12 @@ layout: default
 
 <h2 class="section-title"> Segmentation Track </h2>
 
-<p> In this challenge, the goal is to develop an algorithm that can adapt between synthetic dashcam views and real dashcam footage for the semantic image segmentation task. The training data will include pixel-level semantic annotations for 13 classes. We will also provide validation and testing data, the same way as described above. </p>
-
+<p> In this challenge, the goal is to develop an algorithm that can adapt between synthetic dashcam views and real dashcam footage for the semantic image segmentation task. The training data will include pixel-level semantic annotations for 19 classes. We will also provide validation and testing data, following same protocol: </p>
+<ul>
+    <li> <b>training data (source)</b>: synthetic dashcam renderings along with semantic segmentation labels for 19 classes,</li>
+    <li> <b>validation data (target)</b>: a real world collection of dashcam images along with semantic segmentation labels for the corresponding 19 classes to be used for validating the unsupervised semantic segmentation performance, and</li>
+    <li> <b>test data (target)</b>: a collection of real world dashcam images, different from the validation domain and without labels. The test set will be released shortly before the end of the competition. </li>
+  </ul>
 <figure>
 <img class="img-responsive" src="{{site.baseurl}}/assets/images/semantic-shift.png" style="display: block; margin: auto;"/>
 </figure>
