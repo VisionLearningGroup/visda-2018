@@ -11,7 +11,6 @@ layout: default
 <ol type = "I">
 <li><a href = "#news">News</a></li>
 <li><a href = "#overview">Overview</a></li>
-<li><a href = "#tracks">Tracks</a></li>
 <li><a href = "#dates">Dates</a></li>
 <li><a href = "#registration">Registration</a></li>
 <li><a href = "#download">Download</a></li>
@@ -55,14 +54,13 @@ layout: default
 <p> Participants are welcome to enter in one or both tracks. </p>
 </br>
 
-<a name = "tracks"></a>
 <a name = "classification"></a>
 <h2 class="section-title"> Classification Track </h2>
 <p> In this challenge, the goal is to develop a method of unsupervised domain adaptation for image classification. Participants will be given three datasets, each containing the same object categories: </p> 
   <ul>
-    <li> <b> training data (source)</b>: synthetic 2D renderings of 3D models generated from different angles and with different lighting conditions, </li>
-    <li> <b> validation data (target)</b>: a photo-realistic or real-image validation domain that participants can use to evaluate performance of their domain adaptation methods, and </li>
-    <li> <b> test data (target)</b>: a new real-image test domain, <b> different from the validation domain and without labels </b>. The test set will be released shortly before the end of the competition. </li>
+    <li> <b> training domain (source)</b>: synthetic 2D renderings of 3D models generated from different angles and with different lighting conditions </li>
+    <li> <b> validation domain (target)</b>: a photo-realistic or real-image validation domain that participants can use to evaluate performance of their domain adaptation methods </li>
+    <li> <b> test domain (target)</b>: a new real-image test domain, <b> different from the validation domain and without labels </b>. The test set will be released shortly before the end of the competition </li>
   </ul>
 <p> The reason for using different target domains for validation and test is to evaluate the performance of proposed models as an out-of-the-box domain adaptation tool. This setting more closely mimics realistic deployment scenarios where the target domain is unknown at training time and discourages algorithms that are designed to handle a particular target domain. </p>
 
@@ -78,8 +76,8 @@ layout: default
 <p> In this challenge, the goal is to develop an algorithm that can adapt between synthetic dashcam views and real dashcam footage for the semantic image segmentation task. The training data will include pixel-level semantic annotations for 19 classes. We will also provide validation and testing data, following same protocol: </p>
 <ul>
     <li> <b>training domain (source)</b>: synthetic dashcam renderings along with semantic segmentation labels for 19 classes</li>
-    <li> <b>validation domain (target)</b>: a real world collection of dashcam images along with semantic segmentation labels for the corresponding 19 classes to be used for validating the unsupervised semantic segmentation performance, and</li>
-    <li> <b>test domain (target)</b>: a collection of real world dashcam images, <b>different from the validation domain and without labels</b>. The test set will be released shortly before the end of the competition. </li>
+    <li> <b>validation domain (target)</b>: a real world collection of dashcam images along with semantic segmentation labels for the corresponding 19 classes to be used for validating the unsupervised semantic segmentation performance</li>
+    <li> <b>test domain (target)</b>: a collection of real world dashcam images, <b>different from the validation domain and without labels</b>. The test set will be released shortly before the end of the competition </li>
   </ul>
 
 
@@ -211,6 +209,7 @@ Dequan Wang (UC Berkeley)
 
 
 </br></br></br></br></br>
+<h2 class="section-title"> References </h2>
 [1] FCNs in the Wild: Pixel-level Adversarial and Constraint-based Adaptation, Judy Hoffman, Dequan Wang, Fisher Yu, Trevor Darrell
 
 </br>
