@@ -88,7 +88,17 @@ layout: default
 
 <a name = "registration"></a>
 <h2 class="section-title"> Registration </h2>
-<p> We will use CodaLab to evaluate submissions and maintain a leaderboard. To register for the evaluation server, please create an account on <a href = "https://competitions.codalab.org/">CodaLab</a> and enter as a participant in the Classification Challenge, the Segmentation Challenge. Links will be added to these challenges shortly when they go live. </p>
+<p> We will use CodaLab to evaluate submissions and maintain a leaderboard. To register for the evaluation server, please create an account on <a href = "https://competitions.codalab.org/">CodaLab</a> and and enter as a participant in one of the following competitions: </p>
+
+<ul>
+  <li> Classification Challenge (Method Pretrained on ImageNet) </li>
+  <li> Classification Challenge (No Pretraining) </li>
+  <li> Segmentation Challenge (Method Pretrained on ImageNet) </li>
+  <li> Segmentation Challenge (No Pretraining) </li>
+</ul>
+<p> Links will be added to these challenges shortly when they go live. </p>
+
+<p>If you are working as a team, please register using <b>one</b> account for your team and indicate the names of all of the members on your team. This can be modified in the “User Settings” tab. See the challenge <a href = "#rules">rules</a> for more details. </p>
 
 <p> Additionally, please join our mailing list to receive email updates about the challenge.</p>
 
@@ -148,6 +158,7 @@ layout: default
 
 <p><b>Source Models:</b> The performance of a domain adaptation algorithm greatly depends on the baseline performance of the model trained only on source data. We ask that teams submit two sets of results: 1) predictions obtained only with the source-trained model, and 2) predictions obtained with the adapted model. See the development kit for submission formatting details. </p>
 
+<p><b>Leaderboard:</b>The main leaderboard for each competition track will show results of adapted models and will be used to determine the final team ranks. The expanded leaderboard will additionally show the team's source-only models, i.e. those trained only on the source domain without any adaptation. These results are useful for estimating how much the method improves upon its source-only model, but will not be used to determine team ranks. </p>
 </br>
 
 <a name = "faq"></a>
@@ -155,13 +166,13 @@ layout: default
 
 <ol>
 <li><b>Can we train models on data other than the source domain?</b></li>
-<p> Participants may elect to pre-train their models only on ImageNet. In the submission file, all participants must include a text file that indicates whether or not they pre-trained on ImageNet. Please refer to the challenge evaluation instructions found in the <a href = "#download">DevKit</a> for more details. </p>
+<p> Participants may elect to pre-train their models only on ImageNet. Please refer to the challenge evaluation instructions found in the <a href = "#download">DevKit</a> for more details. </p>
 
 <li><b>Do we have to use the provided baseline models?</b></li>
 <p>No, these are provided for your convenience and are optional. </p>
 
 <li><b>How many submissions can each team submit per competition track?</b></li>
-<p>For the validation domain, the number of submissions per team is limited to 20 upload per day and there are no restrictions on total number of submissions. For the test domain, the number of submissions per team is limited to 1 upload per day and 20 uploads in total. Do not create multiple accounts for a single project to circumvent this limit, as this will result in disqualification .</p>
+<p>For the validation domain, the number of submissions per team is limited to 20 upload per day and there are no restrictions on total number of submissions. For the test domain, the number of submissions per team is limited to 1 upload per day and 20 uploads in total. Only one account per team must be used to submit results. Do not create multiple accounts for a single project to circumvent this limit, as this will result in disqualification. </p>
 
 <li><b>Can external data be used?</b></li>
 <p>The allowed training data consists of the VisDA 2017 Training set. The VisDA 2017 Validation set can be used to test adaptation to a target domain offline, but cannot be used to train the final submitted model (with or without labels). Optional initialization of models with weights pre-trained on ImageNet is allowed and must be declared in the submission. Please see the <a href = "#rules">challenge rules</a> for more details. </p>
