@@ -1,63 +1,10 @@
 <html>
-<head>
-<style type="text/css">
-body
-{
- background:#fff;
-}
-img
-{
- width:auto;
- box-shadow:0px 0px 20px #cecece;
- -moz-transform: scale(0.7);
- -moz-transition-duration: 0.6s; 
- -webkit-transition-duration: 0.6s;
- -webkit-transform: scale(0.7);
- 
- -ms-transform: scale(0.7);
- -ms-transition-duration: 0.6s; 
-}
-img:hover
-{
-  box-shadow: 20px 20px 20px #dcdcdc;
- -moz-transform: scale(0.8);
- -moz-transition-duration: 0.6s;
- -webkit-transition-duration: 0.6s;
- -webkit-transform: scale(0.8);
- 
- -ms-transform: scale(0.8);
- -ms-transition-duration: 0.6s;
- 
-}
-</style>
-</head>
 <body>
-<?php
-$folder_path = 'https://github.com/VisionLearningGroup/visda-2017/tree/master/assets/images/classification_train/aeroplane/'; //image's folder path
+<section style="text-align: justify">
+<figure>
+<img class="img-responsive" src="{{site.baseurl}}/assets/images/classification_train/aeroplane/src_1_02691156_1b0b1d2cb9f9d5c0575bd26acccafabd__10_10_150.png"/>
+</figure>
 
-$num_files = glob($folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);
-
-$folder = opendir($folder_path);
- 
-if($num_files > 0)
-{
- while(false !== ($file = readdir($folder))) 
- {
-  $file_path = $folder_path.$file;
-  $extension = strtolower(pathinfo($file ,PATHINFO_EXTENSION));
-  if($extension=='jpg' || $extension =='png' || $extension == 'gif' || $extension == 'bmp') 
-  {
-   ?>
-            <a href="<?php echo $file_path; ?>"><img src="<?php echo $file_path; ?>"  height="250" /></a>
-            <?php
-  }
- }
-}
-else
-{
- echo "the folder was empty !";
-}
-closedir($folder);
-?>
+</section><!--//section-->
 </body>
 </html>
