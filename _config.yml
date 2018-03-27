@@ -1,7 +1,7 @@
 
-title: 'VisDA2017: Visual Domain Adaptation Challenge'
+title: 'VisDA2018: Visual Domain Adaptation Challenge'
 url: 'http://ai.bu.edu'
-baseurl: '/visda-2017' #change it according to your repository name
+baseurl: '/visda-2018' #change it according to your repository name
 
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
@@ -15,7 +15,7 @@ style: styles-purple
 
 #Profile information
 name: Domain Adaptation
-tagline: ICCV2017 Workshop Challenge
+# tagline: ICCV2017 Workshop Challenge
 # pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
 
