@@ -9,8 +9,8 @@ baseurl: '/visda-2018' #change it according to your repository name
 # style: styles-3
 # style: styles-4
 # style: styles-5
-# style: styles-6
-style: styles-purple
+style: styles-6
+# style: styles-purple
 
 
 #Profile information
