@@ -16,6 +16,38 @@
                     <h5 class="meta">April 9th</h5>
                 </div>
             </div>
+       
+            <div class="education-container container-block" style="background: rgba(0, 0, 50, 0.3);" id='reg'>
+                
+                <h2 class="container-block-title">Registration</h2>
+                <form method="POST" action="http://formspree.io/visda-organizers@googlegroups.com">
+                  <div class="form-group">
+                    <label>Team Name</label>
+                    <input type="text" class="form-control" name="name" placeholder="Team Name" />
+                  </div>
+                  <div class="form-group">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" name="email" placeholder="Email" />
+                  </div>
+                  <div class="form-group">
+                    <label>Affiliation</label>
+                    <input type="text" class="form-control" name="aff" placeholder="Affiliation" />
+                  </div>
+                  <div class="form-group">
+                    <label>Tentative Track</label>
+                    <select class="form-control" name="track">
+                      <option>Both</option>
+                      <option>Classification</option>
+                      <option>Segmentation</option>
+                    </select>
+                  </div>
+                  <input type="hidden" name="_format" value="plain" />
+                  <input type="text" name="_gotcha" style="display:none" />
+                  <button type="submit" class="btn btn-default">Submit</button>
+
+                </form>
+
+            </div>
            
             
             <div class="education-container container-block" style="background: rgba(0, 0, 50, 0.3);" id='reg'>
