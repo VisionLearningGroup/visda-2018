@@ -50,11 +50,23 @@ layout: default
 <p> across two different domain shift problems. Participants are welcome to enter in one or both tracks. </p>
 </br>
 
-<!--
-
 <a name = "classification"></a>
 <h3 class="section-title"> Open-Set Classification Track </h2>
-<p> In this challenge, the goal is to develop a method of unsupervised domain adaptation for image classification. Participants will be given three datasets, each containing the same object categories: </p> 
+<p>Last year’s challenge featured a closed-set classification task for synthetic-to-real adaptation, where all object categories were known ahead of time. The top performing teams in this track developed CNN models that achieved impressive adaptation results. This year, we push the boundaries beyond closed-set classification and propose a novel open-set classification task. In this challenge, the goal is to develop a method of unsupervised domain adaptation for object classification, where the target domains contain images of additional unknown categories not present in the source dataset.</p>
+
+<figure>
+<img class="img-responsive" src="{{site.baseurl}}/assets/images/openset.png"/>
+</figure>	
+	
+<a name = "detection"></a>
+<h3 class="section-title"> Detection Track </h2>
+<p>In this challenge, the goal is to develop a model that can adapt between synthetic and real objects for recognition/detection. This task entails localizing an object from each of 12 learned categories in novel images by predicting its class and its bounding box. </p>
+
+<figure>
+<img class="img-responsive" src="{{site.baseurl}}/assets/images/detection.png"/>
+</figure>
+
+<p>Both tracks feature the same datasets and focus on synthetic-to-real domain adaptation. Participants will be given three datasets, each containing the same object categories:</p>
   <ul>
     <li> <b> training domain (source)</b>: synthetic 2D renderings of 3D models generated from different angles and with different lighting conditions </li>
     <li> <b> validation domain (target)</b>: a photo-realistic or real-image validation domain that participants can use to evaluate performance of their domain adaptation methods </li>
@@ -62,28 +74,9 @@ layout: default
   </ul>
 <p> The reason for using different target domains for validation and test is to evaluate the performance of proposed models as an out-of-the-box domain adaptation tool. This setting more closely mimics realistic deployment scenarios where the target domain is unknown at training time and discourages algorithms that are designed to handle a particular target domain. </p>
 
-<figure>
-<img class="img-responsive" src="{{site.baseurl}}/assets/images/classification-shift.png"/>
-</figure>
-
 </br>
 
-<a name = "segmentation"></a>
-<h3 class="section-title"> Detection Track </h2>
-
-<p> In this challenge, the goal is to develop an algorithm that can adapt between synthetic dashcam views and real dashcam footage for the semantic image segmentation task. The training data will include pixel-level semantic annotations for 19 classes. We will also provide validation and testing data, following same protocol: </p>
-<ul>
-    <li> <b>training domain (source)</b>: synthetic dashcam renderings along with semantic segmentation labels for 19 classes</li>
-    <li> <b>validation domain (target)</b>: a real world collection of dashcam images along with semantic segmentation labels for the corresponding 19 classes to be used for validating the unsupervised semantic segmentation performance</li>
-    <li> <b>test domain (target)</b>: a collection of real world dashcam images, <b>different from the validation domain and without labels</b>. The test set will be released shortly before the end of the competition </li>
-</ul>
-
-<figure>
-<img class="img-responsive" src="{{site.baseurl}}/assets/images/semantic-shift.png" style="display: block; margin: auto;"/>
-</figure>
-
-</br>
-
+<!--
 <a name = "prizes"></a>
 <h2 class="section-title"> Prizes </h2>
 
